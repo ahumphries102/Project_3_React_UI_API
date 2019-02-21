@@ -1,16 +1,16 @@
 import React from 'react'
-import MagicCards from '../MagicCards/MagicCards'
-
 const UserDeck = (props)=>{
 	//map over the deck with a new array and display the cards name in the deck section
 	const newDeckArr = props.usersDeck.map((usersCards, i)=>{
-		return <li key={i}>{usersCards.name}</li>
+		return <li className="cardWindow enlarge" key={i} onClick={props.deleteCard.bind(null, i)}><img src={usersCards.image_uris.normal} alt='magic cards'/></li>
 	})
 	return(
-		<ul>
-			WeWork!
-			{newDeckArr}
-		</ul>
+
+		<div>
+			<ul >
+				{newDeckArr}
+			</ul>
+		</div>
 	)
 }
 	
