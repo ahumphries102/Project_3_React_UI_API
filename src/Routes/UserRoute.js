@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 export default class GetUserDeck extends Component {
+    //An incomplete component that is not used. It was designed with the intention of having multiple users that could view their magic cards
     state ={
         users:[]
     }
